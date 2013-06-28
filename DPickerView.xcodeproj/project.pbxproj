@@ -19,7 +19,8 @@
 		4A4817E5177D9A7200B8D0CF /* selector@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4817DE177D9A7200B8D0CF /* selector@2x.png */; };
 		4A4817E6177D9A7200B8D0CF /* upper_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4817DF177D9A7200B8D0CF /* upper_shadow.png */; };
 		4A4817E7177D9A7200B8D0CF /* upper_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4817E0177D9A7200B8D0CF /* upper_shadow@2x.png */; };
-		4A6DCF5E177D945100917B53 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6DCF5D177D945100917B53 /* Screenshot.png */; };
+		4A4817E9177D9C3900B8D0CF /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A4817E8177D9C3900B8D0CF /* LICENSE.txt */; };
+		4A4817EB177D9D1F00B8D0CF /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A4817EA177D9D1F00B8D0CF /* Screenshot.png */; };
 		4AB3FABF177463CD0030516C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3FABE177463CD0030516C /* UIKit.framework */; };
 		4AB3FAC1177463CD0030516C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3FAC0177463CD0030516C /* Foundation.framework */; };
 		4AB3FAC3177463CD0030516C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3FAC2177463CD0030516C /* CoreGraphics.framework */; };
@@ -30,7 +31,6 @@
 		4AB3FAD5177463CD0030516C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB3FAD3177463CD0030516C /* ViewController.xib */; };
 		4AB3FAEC177468C90030516C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3FAEB177468C90030516C /* CoreText.framework */; };
 		4AB3FAEE177468DA0030516C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3FAED177468DA0030516C /* QuartzCore.framework */; };
-		4AFB169E177D624A007FAE9C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AFB169D177D624A007FAE9C /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +50,8 @@
 		4A4817DE177D9A7200B8D0CF /* selector@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selector@2x.png"; sourceTree = "<group>"; };
 		4A4817DF177D9A7200B8D0CF /* upper_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upper_shadow.png; sourceTree = "<group>"; };
 		4A4817E0177D9A7200B8D0CF /* upper_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upper_shadow@2x.png"; sourceTree = "<group>"; };
-		4A6DCF5D177D945100917B53 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
+		4A4817E8177D9C3900B8D0CF /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4A4817EA177D9D1F00B8D0CF /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 		4AB3FABA177463CD0030516C /* DPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB3FABE177463CD0030516C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4AB3FAC0177463CD0030516C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +67,6 @@
 		4AB3FAD4177463CD0030516C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		4AB3FAEB177468C90030516C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		4AB3FAED177468DA0030516C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		4AFB169D177D624A007FAE9C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +148,7 @@
 		4AB3FAC5177463CD0030516C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4A6DCF5D177D945100917B53 /* Screenshot.png */,
-				4AFB169D177D624A007FAE9C /* LICENSE.txt */,
+				4A4817EA177D9D1F00B8D0CF /* Screenshot.png */,
 				4AB3FAC6177463CD0030516C /* DPickerView-Info.plist */,
 				4AB3FAC7177463CD0030516C /* InfoPlist.strings */,
 				4AB3FACA177463CD0030516C /* main.m */,
@@ -161,6 +160,7 @@
 		4AB3FAE4177464CF0030516C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A4817E8177D9C3900B8D0CF /* LICENSE.txt */,
 				4A4817CC177D9A1600B8D0CF /* DPickerView.h */,
 				4A4817CD177D9A1600B8D0CF /* DPickerView.m */,
 				4A4817CE177D9A1600B8D0CF /* VerticalPickerView.h */,
@@ -227,8 +227,6 @@
 				4AB3FAC9177463CD0030516C /* InfoPlist.strings in Resources */,
 				4AB3FAD5177463CD0030516C /* ViewController.xib in Resources */,
 				4A34778617796DB9005DB851 /* PickerViewController.xib in Resources */,
-				4AFB169E177D624A007FAE9C /* LICENSE.txt in Resources */,
-				4A6DCF5E177D945100917B53 /* Screenshot.png in Resources */,
 				4A4817E1177D9A7200B8D0CF /* lower_shadow.png in Resources */,
 				4A4817E2177D9A7200B8D0CF /* lower_shadow@2x.png in Resources */,
 				4A4817E3177D9A7200B8D0CF /* picker_bg_pattern.png in Resources */,
@@ -236,6 +234,8 @@
 				4A4817E5177D9A7200B8D0CF /* selector@2x.png in Resources */,
 				4A4817E6177D9A7200B8D0CF /* upper_shadow.png in Resources */,
 				4A4817E7177D9A7200B8D0CF /* upper_shadow@2x.png in Resources */,
+				4A4817E9177D9C3900B8D0CF /* LICENSE.txt in Resources */,
+				4A4817EB177D9D1F00B8D0CF /* Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
