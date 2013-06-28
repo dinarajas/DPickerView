@@ -9,7 +9,7 @@ customize the pickerView as you wanted. DPickerView has all the basic features f
  * iOS 7 flat UI look
  * Change the width of component (PickerView column)
  * Supports all versions after 4.3
- * ARC Enabled.
+ * ARC Enabled.<br />
 
 
  ![DPickerView Screenshot](https://raw.github.com/dineshraja1990/DPickerView/master/DPickerView/Screenshot.png)
