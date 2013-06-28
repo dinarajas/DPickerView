@@ -19,6 +19,7 @@
 		4A6DCF5A177D8ED000917B53 /* DPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DCF55177D8ED000917B53 /* DPickerView.m */; };
 		4A6DCF5B177D8ED000917B53 /* VerticalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DCF57177D8ED000917B53 /* VerticalScrollView.m */; };
 		4A6DCF5C177D8ED000917B53 /* VerticalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DCF59177D8ED000917B53 /* VerticalPickerView.m */; };
+		4A6DCF5E177D945100917B53 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6DCF5D177D945100917B53 /* Screenshot.png */; };
 		4AB3FABF177463CD0030516C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3FABE177463CD0030516C /* UIKit.framework */; };
 		4AB3FAC1177463CD0030516C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3FAC0177463CD0030516C /* Foundation.framework */; };
 		4AB3FAC3177463CD0030516C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB3FAC2177463CD0030516C /* CoreGraphics.framework */; };
@@ -49,6 +50,7 @@
 		4A6DCF57177D8ED000917B53 /* VerticalScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerticalScrollView.m; path = ../VerticalScrollView.m; sourceTree = "<group>"; };
 		4A6DCF58177D8ED000917B53 /* VerticalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerticalPickerView.h; path = ../VerticalPickerView.h; sourceTree = "<group>"; };
 		4A6DCF59177D8ED000917B53 /* VerticalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerticalPickerView.m; path = ../VerticalPickerView.m; sourceTree = "<group>"; };
+		4A6DCF5D177D945100917B53 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 		4AB3FABA177463CD0030516C /* DPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB3FABE177463CD0030516C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4AB3FAC0177463CD0030516C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -146,6 +148,7 @@
 		4AB3FAC5177463CD0030516C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4A6DCF5D177D945100917B53 /* Screenshot.png */,
 				4AFB169D177D624A007FAE9C /* LICENSE.txt */,
 				4AB3FAC6177463CD0030516C /* DPickerView-Info.plist */,
 				4AB3FAC7177463CD0030516C /* InfoPlist.strings */,
@@ -232,6 +235,7 @@
 				4A1B8ACA177486670080B2D0 /* upper_shadow.png in Resources */,
 				4A34778617796DB9005DB851 /* PickerViewController.xib in Resources */,
 				4AFB169E177D624A007FAE9C /* LICENSE.txt in Resources */,
+				4A6DCF5E177D945100917B53 /* Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
