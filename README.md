@@ -11,8 +11,8 @@ customize the pickerView as you wanted. DPickerView has all the basic features f
  * Supports all versions after 4.3
  * ARC Enabled.<br />
 
-
- ![DPickerView Screenshot](https://raw.github.com/dineshraja1990/DPickerView/master/DPickerView/Screenshot.png)
+======
+![DPickerView Screenshot](https://raw.github.com/dineshraja1990/DPickerView/master/DPickerView/Screenshot.png)
  
 
 ##Installation
