@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>DPickerView by dineshrajas</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">DPickerView</h1>
+        <p class="header">Now you can customize your PickerView as you expected.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/dineshrajas/DPickerView/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/dineshrajas/DPickerView/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/dineshrajas/DPickerView">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/dineshrajas">dineshrajas</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="dpickerview" class="anchor" href="#dpickerview"><span class="octicon octicon-link"></span></a>DPickerView</h1>
+
+<p>This project was inspired by Apple's default <code>UIPickerView</code> component. Using <code>DPickerView</code>, you can easily 
+customize the pickerView as you wanted. DPickerView has all the basic features from UIPickerView.</p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Customize the User Interface Design (Background, Selector, Fonts)</li>
+<li>iOS 7 flat UI look</li>
+<li>Change the width of component (PickerView column)</li>
+<li>Supports all versions after 4.3</li>
+<li>ARC Enabled.<br>
+</li>
+</ul><h1></h1>
+
+<p><img src="https://raw.github.com/dineshraja1990/DPickerView/master/DPickerView/Screenshot.png" alt="DPickerView Screenshot"></p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add the <code>Classes</code> folder to your project. Add QuartzCore framework to your project. DPickerView uses ARC. 
+If you have a project that doesn't use ARC, just add the <code>-fobjc-arc</code> compiler flag to the DPickerView files.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a name="basic-setup" class="anchor" href="#basic-setup"><span class="octicon octicon-link"></span></a>Basic Setup</h3>
+
+<p>In your viewController file:<br></p>
+
+<div class="highlight"><pre><span class="cp">#import "DPickerView.h"</span>
+
+<span class="n">DPickerView</span> <span class="o">*</span><span class="n">_pickerView</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DPickerView</span> <span class="n">alloc</span><span class="p">]</span><span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">320</span><span class="p">,</span> <span class="mi">216</span><span class="p">)];</span>
+<span class="n">_pickerView</span><span class="p">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="n">self</span><span class="p">;</span>
+<span class="n">_pickerView</span><span class="p">.</span><span class="n">datasource</span> <span class="o">=</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">view</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">_pickerView</span><span class="p">];</span>
+</pre></div>
+
+<h3>
+<a name="delegates-and-datasource-methods" class="anchor" href="#delegates-and-datasource-methods"><span class="octicon octicon-link"></span></a>Delegates and Datasource methods</h3>
+
+<ul>
+<li>Specify the datasource for number of columns in DPickerView</li>
+<li>Datasource methods to get the method call when the item selected.</li>
+</ul><div class="highlight"><pre>
+<span class="cp">#pragma mark Custom Picker View Datasource Methods</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">numberOfComponentsInCustomPickerView:</span><span class="p">(</span><span class="n">DPickerView</span> <span class="o">*</span><span class="p">)</span><span class="nv">pickerView</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mi">5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cp">#pragma mark Custom Picker View Delegate Methods</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">NSMutableArray</span> <span class="o">*</span><span class="p">)</span><span class="nf">titleArrayForCustomPickerView:</span><span class="p">(</span><span class="n">DPickerView</span> <span class="o">*</span><span class="p">)</span><span class="nv">pickerView</span> <span class="nf">forComponent:</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">component</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">_array1</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+        <span class="k">return</span> <span class="n">_array2</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span>
+        <span class="k">return</span> <span class="n">_array3</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">3</span><span class="p">){</span>
+        <span class="k">return</span> <span class="n">_array4</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">_array5</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">customPickerView:</span><span class="p">(</span><span class="n">DPickerView</span> <span class="o">*</span><span class="p">)</span><span class="nv">pickerView</span> <span class="nf">didSelectRow:</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">row</span> <span class="nf">inComponent:</span><span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">component</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">NSLog</span><span class="p">(</span><span class="s">@"array1: %d"</span><span class="p">,</span> <span class="p">[[</span><span class="n">_array1</span> <span class="n">objectAtIndex</span><span class="o">:</span><span class="n">row</span><span class="p">]</span> <span class="n">integerValue</span><span class="p">]);</span>
+    <span class="p">}</span><span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">NSLog</span><span class="p">(</span><span class="s">@"array2: %d"</span><span class="p">,</span> <span class="p">[[</span><span class="n">_array2</span> <span class="n">objectAtIndex</span><span class="o">:</span><span class="n">row</span><span class="p">]</span> <span class="n">integerValue</span><span class="p">]);</span>
+    <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span>
+        <span class="n">NSLog</span><span class="p">(</span><span class="s">@"array3: %d"</span><span class="p">,</span> <span class="p">[[</span><span class="n">_array3</span> <span class="n">objectAtIndex</span><span class="o">:</span><span class="n">row</span><span class="p">]</span> <span class="n">integerValue</span><span class="p">]);</span>
+    <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">3</span><span class="p">){</span>
+        <span class="n">NSLog</span><span class="p">(</span><span class="s">@"array4: %d"</span><span class="p">,</span> <span class="p">[[</span><span class="n">_array4</span> <span class="n">objectAtIndex</span><span class="o">:</span><span class="n">row</span><span class="p">]</span> <span class="n">integerValue</span><span class="p">]);</span>
+    <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">component</span> <span class="o">==</span> <span class="mi">4</span><span class="p">){</span>
+        <span class="n">NSLog</span><span class="p">(</span><span class="s">@"array5: %d"</span><span class="p">,</span> <span class="p">[[</span><span class="n">_array5</span> <span class="n">objectAtIndex</span><span class="o">:</span><span class="n">row</span><span class="p">]</span> <span class="n">integerValue</span><span class="p">]);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>Please forward your queries to me<br><a href="mailto:dina.raja.s@gmail.com">dina.raja.s@gmail.com</a></p>
+
+<p>Fork and contribute to this project if you can. Thank you.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
