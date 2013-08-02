@@ -139,8 +139,8 @@
         offset.x = 0;
         scrollView.contentOffset = offset;
     }
-    [scrollView setNeedsDisplay];
-    [scrollView.layer displayIfNeeded];
+    [scrollView.layer performSelector:@selector(setNeedsDisplay) withObject:nil];
+    [scrollView.layer performSelector:@selector(displayIfNeeded) withObject:nil];
 }
 
 /*

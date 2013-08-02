@@ -48,6 +48,8 @@
 
 - (void)layoutSubviews {
 
+    [super layoutSubviews];
+
     [self.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
 
     NSInteger value = self.contentOffset.y / valueViewSize.height;
